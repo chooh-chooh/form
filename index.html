@@ -9,23 +9,24 @@
   <body> 
     <H1>Forms</H1>
     <form action="https://sandbox.merge.academy/api/message" method="POST">
-      <input required placeholder="name" name="name" type="text">
+      <label for="name">Your name:</label>
        <br>
-      <label for="message"></label>
+      <input id="name" placeholder="name" name="name" type="text" required>
+       <br>
+      <label for="message">Type message here:</label>
        <br>
       <textarea
-       required placeholder="Your message"
-       maxlenght="100"
+       id="message"
+       placeholder="Your message"
        minlength="10"
        name="message"
-       id="message"
-       rows="0"
+       rows="10"
        required
        ></textarea>
-        <br>
-       <button>
+       <br>
+      <button>
         Submit
-       </button>
+      </button>
     </form>   
   </body>
 </html>
